@@ -1,0 +1,2 @@
+# incapacidades
+Sistema de incapacidades
