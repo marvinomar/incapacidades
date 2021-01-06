@@ -4,9 +4,9 @@
 
 ## Members
   
-  Marco Mendez
-  Eduardo Arévalo
-  Marvin Flores
+  *Marco Mendez
+  *Eduardo Arévalo
+  *Marvin Flores
   
 ## Netlify Link
 
