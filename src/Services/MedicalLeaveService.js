@@ -1,4 +1,4 @@
-import contentfulClient from '../contentful';
+import contentfulClient from '../contentfulClient';
 
 //Service for CRUD operation for Medical Leave content model in Contentful
 

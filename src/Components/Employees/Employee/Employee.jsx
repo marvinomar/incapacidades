@@ -7,9 +7,12 @@ import Aux from '../../../Hoc/Auxiliary';
 
 const Employee = (props) => {
     
-    const { isLoading, error, data } = useQuery('getEmployee', async() => {
-        const data = await getEmployee(props.match.params.id);
+    const { id: queryId } = props.match.params;
+    const { isLoading, error, data } = useQuery(['getEmployee', queryId] , async() => {
+        const data = await getEmployee(queryId);
         return data;
+    },{
+        enabled: !!queryId
     });
 
     if(isLoading) {

@@ -6,6 +6,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Aux from './Hoc/Auxiliary';
 import EmployeesDashboard from './Components/Employees/EmployeesDashboard/EmployeesDashboard';
 import Employee from './Components/Employees/Employee/Employee';
+import RegisterForm from './Components/Employees/RegisterForm/RegisterEmployee';
 
 const queryClient = new QueryClient();
 
@@ -23,6 +24,7 @@ function App() {
             <Container className="mt-3">
               <Switch>
                 <Route path="/" exact component={EmployeesDashboard} />
+                <Route path="/register" exact component={RegisterForm} />
                 <Route path="/:id" exact component={Employee} />
               </Switch>
             </Container>
