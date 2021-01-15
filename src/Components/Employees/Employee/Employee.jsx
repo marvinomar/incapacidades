@@ -24,7 +24,7 @@ const Employee = (props) => {
     }
     
     const { fields } = data;
-    const { nombre, dui, position, startingDate, id, medicalLeave } = fields;
+    const { nombre, dui, position, startingDate, id/*, medicalLeave*/ } = fields;
 
     return(
         <Aux>
